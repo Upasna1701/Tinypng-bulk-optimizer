@@ -4,7 +4,7 @@ var tinypng = require('gulp-tinypng-compress');
 gulp.task('tinypng', async function () {
     gulp.src('app/images/**/*.{png,jpg,jpeg,webp}')
         .pipe(tinypng({
-            key: 'JH7NZNcy21WdRzP4bLCNlTpB1ZQl2Ztl',
+            key: 'your API key', //Add your API key here
             sigFile: 'images/.tinypng-sigs',
             log: true
         }))
